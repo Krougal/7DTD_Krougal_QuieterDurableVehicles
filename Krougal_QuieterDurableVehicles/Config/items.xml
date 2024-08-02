@@ -1,0 +1,10 @@
+<Krougal>
+<!-- Vehicles -->
+<set xpath="/items/item[@name='vehicleGyrocopterPlaceable']/effect_group/passive_effect[@name='DegradationMax']/@value">7000</set>
+<set xpath="/items/item[@name='vehicleBicyclePlaceable']/effect_group/passive_effect[@name='DegradationMax']/@value">3000</set>
+<set xpath="/items/item[@name='vehicleMinibikePlaceable']/effect_group/passive_effect[@name='DegradationMax']/@value">4000</set>
+<set xpath="/items/item[@name='vehicleMotorcyclePlaceable']/effect_group/passive_effect[@name='DegradationMax']/@value">8000</set>
+<set xpath="/items/item[@name='vehicleTruck4x4Placeable']/effect_group/passive_effect[@name='DegradationMax']/@value">16000</set>
+<set xpath="/items/item[@name='vehicleGyrocopterPlaceable']/property[@name='Tags']/@value">vehicle,vengine,vfuel,vlight,canHaveCosmetic</set>
+
+</Krougal>

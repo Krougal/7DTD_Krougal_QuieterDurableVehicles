@@ -1,0 +1,73 @@
+<Krougal>
+
+<!-- Air -->
+
+<!-- vehicleGyrocopter -->
+<append xpath="/vehicles/vehicle[@name='vehicleGyrocopter']">
+    <property class="headlight">
+		<property name="class" value="Headlight" />
+		<property name="transform" value="Origin/headlight" />
+		<property name="bright" value=".9" />
+		<property name="position" value="0.1, .1, .1"/> <!-- Left/Right, Down/Up, Back/Front --> 
+		<property name="rotation" value="0, 0, 0"/>
+    </property>
+</append>
+<set xpath="vehicles/vehicle[@name='vehicleGyrocopter']/property[@name='velocityMax_turbo']/@value">13.5,13.5,22.5,13.5</set>
+<set xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@class='engine']/property[@name='gear1']/@value">
+								500,2500, -1400,800,0, 1500,9999,9999,
+								,
+								,
+								0, .5,  .225, .1,  -9, .1, .1, Vehicles/Gyrocopter/gyrocopter_idle_lp,
+								-.1, .1,  .325, .35,  0, 9, .1, Vehicles/Gyrocopter/gyrocopter_med_lp
+</set>
+<!-- Ground -->
+
+<!-- vehicleBicycle -->
+<set xpath="vehicles/vehicle[@name='vehicleBicycle']/property[@name='velocityMax_turbo']/@value">9, 6, 12.75, 6</set>
+
+<!-- vehicleMinibike -->
+<set xpath="vehicles/vehicle[@name='vehicleMinibike']/property[@name='velocityMax_turbo']/@value">10.5, 6, 13.7, 6</set>
+<set xpath="/vehicles/vehicle[@name='vehicleMinibike']/property[@class='engine']/property[@name='gear1']/@value">
+								500,2500, -1400,800,0, 1500,9999,9999,
+								Vehicles/Minibike/minibike_accel_OFF,
+								,
+								0, .5,  .25, .1,  -9, .1, .1, Vehicles/Minibike/minibike_idle_lp_,
+								-.1, .1,  .25, .3,  0, 9, .1, Vehicles/Minibike/minibike_run_lp_
+</set>
+
+<!-- vehicleMotorcycle -->
+
+<set xpath="vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='velocityMax_turbo']/@value">14.7, 9, 21, 12</set>
+
+<!-- vehicleTruck4x4 -->
+
+<set xpath="vehicles/vehicle[@name='vehicleTruck4x4']/property[@name='velocityMax_turbo']/@value">15, 12, 21, 15</set>
+
+<set xpath="/vehicles/vehicle[@name='vehicleTruck4x4']/property[@class='engine']/property[@name='gear1']/@value">
+								500,2500, -1400,800,0, 700,2200,900,
+								Vehicles/Suv/suv_accel1,
+								Vehicles/Suv/suv_decel1,
+								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/suv_idle_lp,
+								-.4, -.02, .35, .35, -.2, 9, .2, Vehicles/Suv/suv_max_speed_lp
+</set>
+<set xpath="/vehicles/vehicle[@name='vehicleTruck4x4']/property[@class='engine']/property[@name='gear2']/@value">
+								500,2500, -2000,1000,2000, 600,2200,800,
+								Vehicles/Suv/suv_accel2,
+								Vehicles/Suv/suv_decel1,
+								-.25, -.05, .1, .2, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+</set>
+<set xpath="/vehicles/vehicle[@name='vehicleTruck4x4']/property[@class='engine']/property[@name='gear3']/@value">
+								500,2500, -2000,1000,2000, 500,2200,1000,
+								Vehicles/Suv/suv_accel3,
+								Vehicles/Suv/suv_decel2,
+								-.28, -.07, .15, .3, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+</set>
+<set xpath="/vehicles/vehicle[@name='vehicleTruck4x4']/property[@class='engine']/property[@name='gear4']/@value">
+								500,2500, -2000,1000,2000, 500,9999,9999,
+								,
+								Vehicles/Suv/suv_decel2,
+								Vehicles/Suv/suv_decel2,
+								-.31, -.08, .3, .45, -1, 1, .1, Vehicles/Suv/suv_max_speed_lp
+</set>
+
+</Krougal>
